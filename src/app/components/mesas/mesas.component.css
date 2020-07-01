@@ -1,0 +1,20 @@
+.meal-btn{
+  background-color: lightseagreen;
+  margin:1vw;
+  padding: 1vw;
+  border: 1px solid lightseagreen;
+  border-radius: 5%;
+}
+
+.meal-btn{
+  color: white;
+}
+
+.meal-btn:hover{
+  cursor: pointer;
+}
+
+.selectedOption{
+  background-color: purple;
+  border: 1px solid purple;
+}

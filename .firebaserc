@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "bg-angular": {
+      "hosting": {
+        "burgerqueen": [
+          "bg-angular"
+        ]
+      }
+    }
+  }
+}

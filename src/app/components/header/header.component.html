@@ -1,0 +1,21 @@
+<nav class='toolbar'>
+  <ul>
+    <li routerLink='../'>Inicio</li>
+    <!-- routerLinkActive='active' -->
+    <!-- cuando una ruta está activa, se le pone la clase "active" -->
+    <!-- <li routerLink='mesas'>Mesas </li>
+    <li routerLink='cocina'>Cocina</li> -->
+  </ul>
+<ng-template #login>
+  <ul>
+    <li routerLink='../login'>Login</li>
+    <li routerLink='../register'>Registro</li>
+  </ul>
+</ng-template>  
+  <ul *ngIf="user | async as user; else login">
+    <li *ngIf="user" routerLink='mesas'>Mesas </li>
+    <li *ngIf="user" routerLink='cocina'>Cocina</li>
+    <li>{{user?.displayName}}</li>
+    <li *ngIf="user" (click)="onLogout()">Logout</li>
+  </ul>
+</nav>

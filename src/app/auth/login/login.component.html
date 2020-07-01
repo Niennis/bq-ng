@@ -1,0 +1,21 @@
+<h2>Login</h2>
+<form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+  <!-- <label for="name">Name:</label>
+  <input type="text" name="name" id="name">
+  <br> -->
+  <!-- <label for="name">Nombre:</label>
+  <input type="text" name="name" formControlName="name">
+  <br> -->
+  <label for="mail">Mail:</label>
+  <input type="email" name="mail" formControlName="email">
+  <br>
+  <label for="pass">Contraseña:</label>
+  <input type="password" name="pass" formControlName="password">
+  <br>
+  <button type="submit">Login</button>
+</form>
+
+
+<p><a class="meal-btn" routerLink="../register">Registrar</a></p>
+
+<router-outlet></router-outlet>

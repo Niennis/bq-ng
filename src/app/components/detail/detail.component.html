@@ -1,0 +1,50 @@
+<!-- <div *ngIf="meal"> -->
+
+  <!-- <h2>Detalle</h2> -->
+  <!-- <div><span>ID: </span>{{meal.id}}</div> -->
+  <!-- <div><span>Precio: $</span>{{meal.price}} DÓNDE ESTÁ ESTO</div> -->
+  <!-- <div><span>Total: $</span>{{ total }}</div> -->
+
+  <!-- <div>
+    <label>name:
+      <input [(ngModel)]="meal.name" placeholder="name"/>
+    </label>
+  </div> -->
+
+<!-- </div> -->
+<section class="breakfast">
+  <div class="chooseItems">
+    <h3>Seleccione item</h3>
+    <button *ngFor="let selectedMeal of meals" class="meal-btn" (click)="onSelect(selectedMeal)">
+      <span class="badge">{{selectedMeal.id}}.</span> {{selectedMeal.name}}
+      <br>
+      <span>$ {{selectedMeal.price}}</span>
+    </button>
+  </div>
+<div class="cart">
+  <h3>Detalle</h3>
+<div class="total-container">
+  <span class="total">Total: $ {{ total }}</span>
+  <button class="send" (click)="sendToKitchen()" [disabled]="add.length === 0">Enviar</button>
+</div>
+<ul>
+  <li class="item">
+    <span class="titleItem">Item</span>
+    <span class="price">Cantidad</span>
+    <span class="price">Precio</span>
+    <span></span>
+  </li>
+</ul>
+<ul>
+  <li *ngFor="let added of add" class="item">
+    <span class="badge">{{added.name}}</span>
+    <span class="price">{{added.quantity}}</span>
+    <span class="price">$ {{added.price}}</span>
+    <button (click)="delete(added)" class="btn-delete">x</button>
+  </li>
+</ul>
+
+<!-- <app-detail [meal]="selectedMeal"></app-detail> -->
+
+</div>
+</section>

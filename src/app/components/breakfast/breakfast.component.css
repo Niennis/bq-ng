@@ -1,0 +1,74 @@
+.meal-btn{
+  background-color: lightsalmon;
+  margin:1vw;
+  padding: 1vw;
+  border: 1px solid lightsalmon;
+  border-radius: 8px;
+  width: 180px;
+}
+
+.meal-btn:hover{
+  cursor: pointer;
+}
+
+.breakfast{
+  display: flex;
+}
+
+.chooseItems{
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+
+.item, .total, .send{
+  background-color: lightgrey;
+  padding: 1vh;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+  margin-bottom: 1vh;
+}
+
+.titleItem{
+  width: 13vw;
+}
+
+.item .badge{
+  width: 15vw;
+}
+
+.item{
+  width: 30vw;
+}
+
+.total, .send{
+  margin-left: 4vw;
+  background-color: lightseagreen;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  height: 25px;
+}
+
+.total{
+  width: 30vw;
+}
+
+.total-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.send{
+  width: 12vw;
+  text-align: center;
+  height: 45px;
+  /* border: 1px solid lightgray; */
+}
+
+.send:disabled{
+  background-color: lightgray;
+}
